@@ -1,0 +1,23 @@
+# list all installed packages
+
+adb shell pm list packages
+
+
+# list app permissions
+
+adb shell pm list permissions
+
+# adb list the permissions of a specific package!
+
+adb shell pm list permissions com.android.keychain
+
+adb shell pm list permissions package
+
+# list permissions of specific package!
+
+adb shell dumpsys package packagename
+
+#### This is how you can see permissions that are granted to a specific package!
+
+adb shell "dumpsys package dz.condor.sav | grep permission"
+
